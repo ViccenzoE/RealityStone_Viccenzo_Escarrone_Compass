@@ -24,6 +24,10 @@ describe('Calculadora') do
         expect(calculadora.soma(10, -1.2)).to eq 8.8
     end
 
+    it("Deve subtrair somente números") do
+        expect(calculadora.soma(12, "a")).to include 'Soma deve conter somente números!'
+    end
+
     
 
     it('Deve subtrair dois inteiros positivos') do
@@ -44,6 +48,10 @@ describe('Calculadora') do
 
     it("Deve subtrair decimais e inteiros") do
         expect(calculadora.subtrair(10, 3.5)).to eq 6.5
+    end
+
+    it("Deve subtrair somente números") do
+        expect(calculadora.subtrair(12, "a")).to include 'Subtração deve conter somente números!'
     end
 
 
@@ -72,6 +80,10 @@ describe('Calculadora') do
         expect(calculadora.multiplicar(172, 0)).to eq 0
     end
 
+    it("Deve multiplicar somente números") do
+        expect(calculadora.multiplicar(12, "a")).to include 'Multiplicação deve conter somente números!'
+    end
+
 
 
     it('Deve dividir dois inteiros positivos') do
@@ -97,7 +109,11 @@ describe('Calculadora') do
     it("Dividendo deve ser diferente de zero") do
         expect(calculadora.dividir(12, 0)).to include 'Dividendo deve ser diferente de zero!'
     end
-    
+
+    it("Deve dividir somente números") do
+        expect(calculadora.dividir(12, "a")).to include 'Divisão deve conter somente números!'
+    end
+
 
 
     it('Deve realizar a exponenciação de dois números inteiros positivos') do
@@ -118,5 +134,9 @@ describe('Calculadora') do
 
     it("Expoente negativo deve resultar na divisão pelo inverso de exponenciado") do
         expect(calculadora.potencia(10, -1)).to eq 0.1
+    end
+
+    it("Deve exponenciar somente números") do
+        expect(calculadora.potencia(12, "a")).to include 'Potenciação deve conter somente números!'
     end
 end
