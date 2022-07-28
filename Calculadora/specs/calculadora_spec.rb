@@ -98,4 +98,25 @@ describe('Calculadora') do
         expect(calculadora.dividir(12, 0)).to include 'Dividendo deve ser diferente de zero!'
     end
     
+
+
+    it('Deve realizar a exponenciação de dois números inteiros positivos') do
+        expect(calculadora.potencia(10, 2)).to eq 100
+    end
+
+    it("Deve realizar a exponenciação de dois números inteiros negativos") do
+        expect(calculadora.potencia(-2, -3)).to eq -0.125
+    end
+
+    it("Deve realizar a exponenciação de um decimal positivo") do
+        expect(calculadora.potencia(6.8, 2)).to eq 46.24
+    end
+
+    it("Expoente 0 deve resultar em valor 1") do
+        expect(calculadora.potencia(4, 0)).to eq 1
+    end
+
+    it("Expoente negativo deve resultar na divisão pelo inverso de exponenciado") do
+        expect(calculadora.potencia(10, -1)).to eq 0.1
+    end
 end

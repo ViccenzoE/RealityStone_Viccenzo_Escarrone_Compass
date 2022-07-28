@@ -21,5 +21,10 @@ class Calculadora
         divisao = a / b
         divisao.round(2)
     end
+
+    def potencia(a, b)
+        exponenciacao = a ** b 
+        exponenciacao.round(3)
+    end
 end
     
