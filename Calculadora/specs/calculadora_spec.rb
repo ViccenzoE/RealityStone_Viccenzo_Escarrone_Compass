@@ -48,7 +48,7 @@ describe('Calculadora') do
 
 
 
-    it('Deve multiplicar dois inteiros positivos') do
+    it('Deve dividir dois inteiros positivos') do
         expect(calculadora.multiplicar(3, 2)).to eq 6
     end
 
@@ -71,4 +71,31 @@ describe('Calculadora') do
     it("Multiplicação por zero deve resultar em 0") do
         expect(calculadora.multiplicar(172, 0)).to eq 0
     end
+
+
+
+    it('Deve dividir dois inteiros positivos') do
+        expect(calculadora.dividir(10, 2)).to eq 5
+    end
+
+    it("Deve dividir números negativos") do
+        expect(calculadora.dividir(-2, -1)).to eq 2
+    end
+
+    it("Deve dividir dois decimais") do
+        expect(calculadora.dividir(6.8, 2.5)).to eq 2.72
+    end
+
+    it("Deve dividir dois decimais negativos") do
+        expect(calculadora.dividir(-15, 3.5)).to eq -4.29
+    end
+
+    it("Deve dividir decimais e inteiros") do
+        expect(calculadora.dividir(12, 2.5)).to eq 4.8
+    end
+
+    it("Dividendo deve ser diferente de zero") do
+        expect(calculadora.dividir(12, 0)).to include 'Dividendo deve ser diferente de zero!'
+    end
+    
 end

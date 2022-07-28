@@ -13,5 +13,13 @@ class Calculadora
         multplicacao = a * b
         multplicacao.round(2)
     end
+
+    def dividir(a, b)
+        if b == 0
+            return 'Dividendo deve ser diferente de zero!'
+        end
+        divisao = a / b
+        divisao.round(2)
+    end
 end
     
