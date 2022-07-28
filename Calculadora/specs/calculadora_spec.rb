@@ -45,4 +45,30 @@ describe('Calculadora') do
     it("Deve subtrair decimais e inteiros") do
         expect(calculadora.subtrair(10, 3.5)).to eq 6.5
     end
+
+
+
+    it('Deve multiplicar dois inteiros positivos') do
+        expect(calculadora.multiplicar(3, 2)).to eq 6
+    end
+
+    it("Deve multiplicar números negativos") do
+        expect(calculadora.multiplicar(-1, -1)).to eq 1
+    end
+
+    it("Deve multiplicar dois decimais") do
+        expect(calculadora.multiplicar(3.1, 2.1)).to eq 6.51
+    end
+
+    it("Deve multiplicar dois decimais negativos") do
+        expect(calculadora.multiplicar(-2.5, 1.1)).to eq -2.75
+    end
+
+    it("Deve multiplicar decimais e inteiros") do
+        expect(calculadora.multiplicar(10, 3.5)).to eq 35
+    end
+    
+    it("Multiplicação por zero deve resultar em 0") do
+        expect(calculadora.multiplicar(172, 0)).to eq 0
+    end
 end

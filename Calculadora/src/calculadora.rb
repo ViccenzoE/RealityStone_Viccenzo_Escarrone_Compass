@@ -9,5 +9,9 @@ class Calculadora
       subtracao.round(1)
     end
     
+    def multiplicar(a, b)
+        multplicacao = a * b
+        multplicacao.round(2)
+    end
 end
     
