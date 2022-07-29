@@ -27,7 +27,7 @@ Tabela de conteúdos
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Ruby](http://rubyinstaller.org/downloads/), [CMDER](https://github.com/cmderdev/cmder). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
-Além do mais, é necessária a instalação da GEM rspec. Confira o tutorial abaixo:
+Além do mais, é necessária a instalação da GEM RSPEC. Confira o tutorial abaixo:
 
 
 

@@ -2,7 +2,7 @@
 
 
 ## Descrição do Projeto
-<p align="center">O seguinte projeto conta com dois segmentos: o primeiro, "Exercícios", contém o aprofundamento na linguagem Ruby por meio de soluções em questões; Já o segundo segmento, é referente a implementação de métodos e testes para assegurar o correto funcionamento de uma calculadora, também implementada pela lingaugem Ruby. Para visualizar todas as ferramentas utilizadas em cada um dos dois conteúdos, acesse-os e verifique em suas descrições os passo-a-passo demais características.</p>
+<p align="center">O seguinte projeto conta com dois segmentos: o primeiro, "Exercícios", contém o aprofundamento na linguagem Ruby por meio de soluções em questões; Já o segundo segmento, é referente a implementação de métodos e testes para assegurar o correto funcionamento de uma calculadora, também implementada pela lingaugem Ruby. Para visualizar todas as ferramentas utilizadas em cada um dos dois conteúdos, acesse-os e verifique em suas descrições os passo-a-passo demais características. A versão utilizada do Ruby foi a 3.1.2p20.</p>
 
 
 Tabela de conteúdos
@@ -26,7 +26,7 @@ Tabela de conteúdos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [CMDER](https://github.com/cmderdev/cmder). 
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/). 
 
 
 
