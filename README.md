@@ -2,7 +2,10 @@
 
 
 ## Descrição do Projeto
-<p align="center">O seguinte projeto conta com dois segmentos: o primeiro, "Exercícios", contém o aprofundamento na linguagem Ruby por meio de soluções em questões; Já o segundo segmento, é referente a implementação de métodos e testes para assegurar o correto funcionamento de uma calculadora, também implementada pela lingaugem Ruby. </p>
+<p align="center">O seguinte projeto conta com dois segmentos: o primeiro, "Exercícios", contém o aprofundamento na linguagem Ruby por meio de soluções em questões; Já o segundo segmento, é referente a implementação de métodos e testes para assegurar o correto funcionamento de uma calculadora, também implementada pela lingaugem Ruby. 
+
+
+Para visualizar todas as ferramentas utilizadas em cada um dos dois conteúdos, acesse-os e verifique em suas descrições os passo-a-passo demais características.</p>
 
 
 Tabela de conteúdos
@@ -44,7 +47,7 @@ $ code .
 ```
 
 
-### 🛠 Tecnologias
+### Tecnologias
 
 A seguinte ferramenta foi usadas na construção do projeto:
 
