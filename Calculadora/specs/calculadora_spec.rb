@@ -8,7 +8,7 @@ describe('Calculadora') do
         expect(calculadora.soma(10, 5)).to eq 15
     end
 
-    it("Deve somar números negativos") do
+    it("Deve somar dois inteiros negativos") do
         expect(calculadora.soma(-1, -3)).to eq -4
     end
 
@@ -51,7 +51,7 @@ describe('Calculadora') do
     end
 
     it("Deve subtrair somente números") do
-        expect(calculadora.subtrair(12, "a")).to include 'Subtração deve conter somente números!'
+        expect(calculadora.subtrair("i", "l")).to include 'Subtração deve conter somente números!'
     end
 
 
@@ -81,7 +81,7 @@ describe('Calculadora') do
     end
 
     it("Deve multiplicar somente números") do
-        expect(calculadora.multiplicar(12, "a")).to include 'Multiplicação deve conter somente números!'
+        expect(calculadora.multiplicar(1, "f")).to include 'Multiplicação deve conter somente números!'
     end
 
 
@@ -111,7 +111,7 @@ describe('Calculadora') do
     end
 
     it("Deve dividir somente números") do
-        expect(calculadora.dividir(12, "a")).to include 'Divisão deve conter somente números!'
+        expect(calculadora.dividir(12, "x")).to include 'Divisão deve conter somente números!'
     end
 
 
@@ -137,6 +137,24 @@ describe('Calculadora') do
     end
 
     it("Deve exponenciar somente números") do
-        expect(calculadora.potencia(12, "a")).to include 'Potenciação deve conter somente números!'
+        expect(calculadora.potencia("palavra", 4)).to include 'Potenciação deve conter somente números!'
+    end
+
+
+
+    it('Deve realizar a raíz quadrada um número inteiro positivos') do
+        expect(calculadora.raiz(4)).to eq 2
+    end
+
+    it("Deve realizar a raíz quadrada um decimal positivo") do
+        expect(calculadora.raiz(4.5)).to eq 2.12
+    end
+    
+    it("Deve realizar a raíz somente números") do
+        expect(calculadora.raiz(-4)).to include 'Raíz quadrada inváldia, número menor que zero!'
+    end
+
+    it("Deve realizar a raíz somente números") do
+        expect(calculadora.raiz("raiz")).to include 'Raíz quadrada deve conter somente números!'
     end
 end

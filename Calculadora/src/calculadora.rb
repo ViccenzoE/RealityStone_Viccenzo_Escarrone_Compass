@@ -41,5 +41,16 @@ class Calculadora
         exponenciacao = potencia1 ** potencia2
         exponenciacao.round(3)
     end
+
+    def raiz(radical)
+        if radical.class == String
+            return 'Raíz quadrada deve conter somente números!'
+        end
+        if radical < 0
+            return 'Raíz quadrada inváldia, número menor que zero!'
+        end
+        raizQuadrada = Math.sqrt(radical)
+        raizQuadrada.round(2)
+    end
 end
     
